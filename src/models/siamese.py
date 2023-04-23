@@ -21,9 +21,9 @@ class ConvSiameseNet(SiameseNetGeneric):
         self.conv2 = nn.Conv2d(32, 64, 5)
         
         self.fc1 = nn.Linear(1024, 512)
-        self.fc2 = nn.Linear(256, 2)
+        self.fc2 = nn.Linear(512, 2)
         
-        self.pool = nn.MaxPool2d(kernel=2, stride=2)
+        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
         self.dropout = nn.Dropout(0.3)
         
     def _feed_fw(self, imgs):
