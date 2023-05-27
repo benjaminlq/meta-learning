@@ -1,2 +1,2 @@
 # meta-learning
-One-Shot and K-Short Learning
+One-Shot and K-Shot Learning
